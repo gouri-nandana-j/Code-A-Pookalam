@@ -3,22 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elegant Pookalam Design</title>
+    <title>Pookalam Design</title>
     <style>
         :root {
             --bg-color: #fafafa;
-            /* Colors used in the design */
             --c1-deep-red: #c0392b;
             --c2-bright-orange: #e67e22;
             --c3-golden-yellow: #f1c40f;
             --c4-lime-green: #82c91e;
-            --c5b-darker-green: #1e8449;
+            --c5-dark-green: #1e8449;
             --c6-sky-blue: #3498db;
-            --c8-majestic-purple: #8e44ad;
-            --c9-soft-pink: #d988b7;
-            --c10-pure-white: #ecf0f1;
-            --c11-lavender: #d6a2e8;
-            --c12-magenta: #d81b60;
+            --c7-majestic-purple: #8e44ad;
+            --c8-soft-pink: #d988b7;
+            --c9-pure-white: #ecf0f1;
+            --c10-magenta: #d81b60;
         }
 
         body {
@@ -51,8 +49,9 @@
         }
         
         .base-circle {
-            background: var(--c5b-darker-green);
+            background: var(--c5-dark-green);
             box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+        }
 
         .outer-ring {
             z-index: 1;
@@ -66,7 +65,7 @@
         .outer-ring-2 {
             width: 84%;
             height: 84%;
-            background-color: var(--c10-pure-white);
+            background-color: var(--c9-pure-white);
         }
         .outer-ring-3 {
             width: 78%;
@@ -81,9 +80,9 @@
         .star-point {
             position: absolute;
             width: 30%;
-            height: 55%;
+            height: 51.15%;
             left: 35%;
-            top: -2.5%;
+            top: -1.15%;
             transform-origin: bottom center;
             background: var(--c1-deep-red);
             clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
@@ -110,16 +109,15 @@
         .center-medallion {
             width: 22%;
             height: 22%;
-            background: conic-gradient(var(--c11-lavender) 0deg 90deg, var(--c9-soft-pink) 90deg 180deg, var(--c12-magenta) 180deg 270deg, var(--c8-majestic-purple) 270deg 360deg);
+            background: conic-gradient(var(--c8-soft-pink) 0deg 120deg, var(--c10-magenta) 120deg 240deg, var(--c7-majestic-purple) 240deg 360deg);
             box-sizing: border-box;
             z-index: 5;
-            box-shadow: 0 0 15px rgba(0,0,0,0.3);
         }
 
         .inner-center-dot {
             width: 9%;
             height: 9%;
-            background-color: var(--c10-pure-white);
+            background-color: var(--c9-pure-white);
             z-index: 7;
             box-sizing: border-box;
         }
@@ -140,15 +138,11 @@
 <body>
 
     <div class="pookalam-container">
-        <!-- HTML Structure: The elements are listed from bottom to top in terms of stacking. -->
-
-        <!-- Base Rings -->
         <div class="layer base-circle"></div>
         <div class="layer outer-ring outer-ring-1"></div>
         <div class="layer outer-ring outer-ring-2"></div>
         <div class="layer outer-ring outer-ring-3"></div>
 
-        <!-- Eight-Pointed Star -->
         <div class="layer eight-point-star">
             <div class="star-point" style="transform: rotate(0deg);"></div>
             <div class="star-point" style="transform: rotate(45deg);"></div>
@@ -160,7 +154,6 @@
             <div class="star-point" style="transform: rotate(315deg);"></div>
         </div>
 
-        <!-- Alternating Color Flower -->
         <div class="layer secondary-flower">
             <div class="petal" style="transform: rotate(0deg); z-index: 10;"></div>
             <div class="petal" style="transform: rotate(30deg); background-color: var(--c2-bright-orange); z-index: 11;"></div>
@@ -176,11 +169,9 @@
             <div class="petal" style="transform: rotate(330deg); background-color: var(--c2-bright-orange); z-index: 11;"></div>
         </div>
 
-        <!-- Center Elements -->
         <div class="layer center-medallion"></div>
         <div class="layer inner-center-dot"></div>
     </div>
 
 </body>
 </html>
-
