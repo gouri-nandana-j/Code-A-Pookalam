@@ -7,8 +7,10 @@
 ## 👩‍💻 Participant Details
 
 **Name:** Gouri Nandana J  
-**Class:** S5 (R5A)
+**Class:** S5 (R5A)  
 **Department:** Computer Science and Engineering  
-**College:** Sree Chitra Thirunal College Of Engineering
+**College:** Sree Chitra Thirunal College Of Engineering  
+
+Check out the live site here: [Click to view](https://gouri-nandana-j.github.io/Code-A-Pookalam/)
 
 ---
